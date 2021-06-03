@@ -53,6 +53,9 @@ class LoginPage extends StatelessWidget {
                       print("Hi alamin");
                     },
                     child: Text("Login"),
+                    style: TextButton.styleFrom(
+                      minimumSize: Size(100, 50),
+                    ),
                   )
                 ],
               ),
