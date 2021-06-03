@@ -63,11 +63,12 @@ class _LoginPageState extends State<LoginPage> {
 
                   InkWell(
                     // for access onTap method;
-                    onTap: () {
-                      //Navigator.pushNamed(context, MyRoutes.homeRoute);
+                    onTap: () async {
                       setState(() {
                         changedButton = true;
                       });
+                      await Future.delayed(Duration(seconds: 1));
+                      Navigator.pushNamed(context, MyRoutes.homeRoute);
                     },
                     child: AnimatedContainer(
                       duration: Duration(seconds: 1),
