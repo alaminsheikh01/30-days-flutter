@@ -8,6 +8,7 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   String name = "";
+  bool changedButton = false;
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -61,12 +62,17 @@ class _LoginPageState extends State<LoginPage> {
                   ),
 
                   InkWell(
+                    // for access onTap method;
                     onTap: () {
-                      Navigator.pushNamed(context, MyRoutes.homeRoute);
+                      //Navigator.pushNamed(context, MyRoutes.homeRoute);
+                      setState(() {
+                        changedButton = true;
+                      });
                     },
-                    child: Container(
+                    child: AnimatedContainer(
+                      duration: Duration(seconds: 1),
                       height: 40,
-                      width: 130,
+                      width: changedButton ? 50 : 130,
                       // color: Colors.deepPurple,
                       alignment: Alignment.center,
                       child: Text(
