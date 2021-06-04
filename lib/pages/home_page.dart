@@ -13,21 +13,21 @@ class HomePage extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
         fontFamily: GoogleFonts.lato().fontFamily,
+        appBarTheme: AppBarTheme(
+          color: Colors.white,
+          elevation: 0.0,
+          iconTheme: IconThemeData(
+            color: Colors.black,
+          ),
+          textTheme: Theme.of(context).textTheme,
+        ),
       ),
       darkTheme: ThemeData(
         brightness: Brightness.dark,
       ),
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.white,
-          elevation: 0.0,
-          iconTheme: IconThemeData(color: Colors.black),
-          title: Text(
-            "Catelog App",
-            style: TextStyle(
-              color: Colors.black,
-            ),
-          ),
+          title: Text("Catelog App"),
         ),
         body: Center(
           child: Container(
