@@ -19,7 +19,15 @@ class HomePage extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Catelog App"),
+          backgroundColor: Colors.white,
+          elevation: 0.0,
+          iconTheme: IconThemeData(color: Colors.black),
+          title: Text(
+            "Catelog App",
+            style: TextStyle(
+              color: Colors.black,
+            ),
+          ),
         ),
         body: Center(
           child: Container(
