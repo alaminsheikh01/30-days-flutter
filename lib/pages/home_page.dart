@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:practice_from_youtube/widgets/drawer.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:practice_from_youtube/widgets/theme.dart';
 
 class HomePage extends StatelessWidget {
   int a = 20;
@@ -10,21 +11,8 @@ class HomePage extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.light,
-      theme: ThemeData(
-        primarySwatch: Colors.deepPurple,
-        fontFamily: GoogleFonts.lato().fontFamily,
-        appBarTheme: AppBarTheme(
-          color: Colors.white,
-          elevation: 0.0,
-          iconTheme: IconThemeData(
-            color: Colors.black,
-          ),
-          textTheme: Theme.of(context).textTheme,
-        ),
-      ),
-      darkTheme: ThemeData(
-        brightness: Brightness.dark,
-      ),
+      theme: MyTheme.LisghtTheme(context),
+      darkTheme: MyTheme.darkTheme(context),
       home: Scaffold(
         appBar: AppBar(
           title: Text("Catelog App"),
