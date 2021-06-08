@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:practice_from_youtube/models/catalog.dart';
 import 'package:practice_from_youtube/widgets/drawer.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:practice_from_youtube/widgets/item_widget.dart';
 import 'package:practice_from_youtube/widgets/theme.dart';
 
 class HomePage extends StatelessWidget {
@@ -17,10 +18,13 @@ class HomePage extends StatelessWidget {
         appBar: AppBar(
           title: Text("Catelog App"),
         ),
-        body: Center(
-          child: Container(
-            child: Text("Welcome to $a  days of flutter "),
-          ),
+        body: ListView.builder(
+          itemCount: CatalogModel.products.length,
+          itemBuilder: (context, index) {
+            return ItemWidget(
+              item: CatalogModel.products[index],
+            );
+          },
         ),
         drawer: MyDrawer(),
       ),
