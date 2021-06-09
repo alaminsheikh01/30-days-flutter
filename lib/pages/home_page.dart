@@ -9,6 +9,8 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final dummyList = List.generate(5, (index) => CatalogModel.products[0]);
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.light,
@@ -21,10 +23,10 @@ class HomePage extends StatelessWidget {
         body: Padding(
           padding: const EdgeInsets.all(16.0),
           child: ListView.builder(
-            itemCount: CatalogModel.products.length,
+            itemCount: dummyList.length,
             itemBuilder: (context, index) {
               return ItemWidget(
-                item: CatalogModel.products[index],
+                item: dummyList[index],
               );
             },
           ),
