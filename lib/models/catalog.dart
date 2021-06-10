@@ -18,10 +18,19 @@ class Item {
       image: map["image"],
     );
   }
+
+  toMap() => {
+        "id": id,
+        "name": name,
+        "desc": desc,
+        "price": price,
+        "color": color,
+        "image": image,
+      };
 }
 
 class CatalogModel {
-  static final products = [
+  static List<Item> products = [
     Item(
       id: 1,
       name: "sample product name",
@@ -29,7 +38,7 @@ class CatalogModel {
       price: 999,
       color: "#33505a",
       image:
-          "https://yodafiles.s3-ap-southeast-1.amazonaws.com/uploads/profile_images/thumbs/20190324_181434_5c9774f698ea8.jpg",
+          "https://res.cloudinary.com/practicaldev/image/fetch/s--5i-4I-y2--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/578716/27c38a32-f441-4e19-a792-d105e981f99a.png",
     )
   ];
 }
