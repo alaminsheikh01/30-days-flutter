@@ -1,0 +1,49 @@
+{
+    "products" :[
+        {
+       "id": 1,
+      "name": "sample product name",
+      "desc": "sample product description so far so.",
+      "price": 999,
+      "color": "#33505a",
+      "image":
+          "https://yodafiles.s3-ap-southeast-1.amazonaws.com/uploads/profile_images/thumbs/20190324_181434_5c9774f698ea8.jpg"
+        },
+        {
+            "id": 2,
+           "name": "sample product name",
+           "desc": "sample product description so far so.",
+           "price": 999,
+           "color": "#33505a",
+           "image":
+               "https://yodafiles.s3-ap-southeast-1.amazonaws.com/uploads/profile_images/thumbs/20190324_181434_5c9774f698ea8.jpg"
+             },
+             {
+                "id": 3,
+               "name": "sample product name",
+               "desc": "sample product description so far so.",
+               "price": 999,
+               "color": "#33505a",
+               "image":
+                   "https://yodafiles.s3-ap-southeast-1.amazonaws.com/uploads/profile_images/thumbs/20190324_181434_5c9774f698ea8.jpg"
+                 },
+                 {
+                    "id": 4,
+                   "name": "sample product name",
+                   "desc": "sample product description so far so.",
+                   "price": 999,
+                   "color": "#33505a",
+                   "image":
+                       "https://yodafiles.s3-ap-southeast-1.amazonaws.com/uploads/profile_images/thumbs/20190324_181434_5c9774f698ea8.jpg"
+                     },
+                     {
+                        "id": 5,
+                       "name": "sample product name",
+                       "desc": "sample product description so far so.",
+                       "price": 999,
+                       "color": "#33505a",
+                       "image":
+                           "https://yodafiles.s3-ap-southeast-1.amazonaws.com/uploads/profile_images/thumbs/20190324_181434_5c9774f698ea8.jpg"
+                         }
+    ]
+}
